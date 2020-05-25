@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Розв'язок дифференціальних рівнянь</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="formFunc" id="formFunc">
+            <table>
+                <tr>
+                    <th><label for="minGran">Виберіть ліву границю</label></th>
+                    <th><label for="maxGran">Виберіть праву границю</label></th>
+                    <th><label for="step">Виберіть крок</label></th>
+                    <th><label for="firstY">Виберіть чому дорівнює Y1</label></th>
+                    <th><label for="func">Функція</label></th>
+                </tr>
+                <tr>
+                    <td><input type="number" name="minGran" class="minGran inputs" id="minGran"></td>
+                    <td><input type="number" name="maxGran" class="maxGran inputs" id="maxGran"></td>
+                    <td><input type="number" name="step" class="step inputs" id="step" step="0.1" min="0.1" max="1000" ></td>
+                    <td><input type="number" name="firstY" class="firstY inputs" id="firstY" ></td>
+                    <td><input type="text" name="func" id="func" class="func inputs"></td>
+                </tr>
+            </table>
+            <div class="allFuncVers">
+                <div><input type="radio" name="method" id="eilerF" class="eilerF mothods"><label for="eilerF">Метод Ейлора</label></div>
+                <div><input type="radio" name="method" id="eilerkoshiF" class="eilerkoshiF mothods"><label for="eilerkoshiF">Метод Ейлора-Коші</label></div>
+                <div><input type="radio" name="method" id="rungekuttaF" class="rungekuttaF mothods"><label for="rungekuttaF">Метода Рунге-Кутта</label></div>
+            </div>
+            <button class="go" id="go" >Розв'язати!</button>
+        </div>
+        <div class="result" id="result"></div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

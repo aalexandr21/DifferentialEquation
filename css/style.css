@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgb(127, 255, 212);
+}
+table{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+table tr th label{
+    font-weight: 200;
+}
+table tr td input{
+    margin-top: 10px;
+    width: 90%;
+    padding: 5px 5px 5px 10px;
+    border: none;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(194, 255, 235, 0.5);
+    outline:none;
+    color: black;
+    font-weight: 600;
+}
+.allFuncVers{
+    width: 50%;
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+}
+.allFuncVers div{
+    width: 33%;
+    padding: 10px;
+}
+.allFuncVers div:hover{
+    background-color: rgba(120, 255, 86, 0.5);
+}
+.go{
+    display: none;
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.5em;
+}
+.go:hover{
+    background-color: rgba(120, 255, 86, 0.5);
+
+}
+.result{
+    display: none;
+    padding-top: 5px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+    border-top: 1px solid black;
+}
+
+@keyframes toTop{
+    from{
+        margin-top: 50vh;
+        transform: translateY(-50%);
+    } 
+    to{
+        margin-top: 0;
+        transform: translateY(0);
+    }
+}
+@keyframes toCenter{
+    to{
+        margin-top: 50vh;
+        transform: translateY(-50%);
+    }
+}
